@@ -1,14 +1,17 @@
 import React from "react";
 import { Home } from "./components/Home";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 
-const queryClient = new QueryClient();
+const client = new ApolloClient({
+  uri: "http://coding-challenge-a8s934ksd.eu-central-1.elasticbeanstalk.com/graphql",
+  cache: new InMemoryCache(),
+});
 
 function App(): JSX.Element {
   return (
-    <QueryClientProvider client={queryClient}>
+    <ApolloProvider client={client}>
       <Home />
-    </QueryClientProvider>
+    </ApolloProvider>
   );
 }
 
