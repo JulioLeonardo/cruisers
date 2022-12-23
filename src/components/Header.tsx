@@ -5,7 +5,7 @@ import { TypeFilter, ListToggle } from "./";
 
 const Header = (): JSX.Element => {
   return (
-    <header>
+    <StyledHeader>
       <Box
         sx={{
           display: "flex",
@@ -20,9 +20,16 @@ const Header = (): JSX.Element => {
           <ListToggle />
         </Box>
       </Box>
-    </header>
+    </StyledHeader>
   );
 };
+
+const StyledHeader = styled("header")(({ theme }) => ({
+  position: "sticky",
+  top: 0,
+  backgroundColor: theme.palette.background.paper,
+  paddingBottom: theme.spacing(2),
+}));
 
 const StyledLogo = styled("img")(({ theme: { spacing } }) => ({
   width: spacing(38),
