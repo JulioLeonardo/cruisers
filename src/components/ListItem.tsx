@@ -20,7 +20,7 @@ const ListItem = ({ ship }: { ship: Ship }): JSX.Element => {
       <Typography variant="h5" sx={{ paddingBottom: 1 }}>
         {ship.name}
       </Typography>
-      <Box display="flex" gap={2}>
+      <Box display="flex" flexWrap="wrap" gap={2}>
         <InfoChip
           title="Status"
           icon={
