@@ -1,8 +1,75 @@
-# Getting Started with Create React App
+<h1 align="center">Cruisers - Your home at sea</h2>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2 align="center">
+ <a href="#requisites">Prerequisites</a> • 
+ <a href="#running">Running the project</a> • 
+ <a href="#tech">Tech</a> • 
+ <a href="#scripts">Scripts</a> • 
+ <a href="#author">Author</a> • 
+ <a href="#licence">Licence</a>
+</h2>
 
-## Available Scripts
+## Features
+
+- [x] Ships List
+- [x] Alternative gallery view
+- [x] Switch betweeen list and gallery view at any given time
+- [x] Infinite scroll
+- [x] Ships filter by type
+- [x] Page is interactive
+
+
+<h2 id="requisites">
+	Prerequisites
+</h2>
+
+<p>
+Before starting, please install the following tools:
+<a href="https://git-scm.com" target="_blank">Git</a>, <a href="https://nodejs.org/en/" target="_blank">Node.js</a> <br>
+Besides that, it is always good to have a nice IDE such as <a href="https://code.visualstudio.com/" target="_blank">VScode</a>
+</p>
+
+<h2 id="running">
+	Rodando o projeto
+</h2>
+
+```bash
+# Clone the repo
+$ git clone https://github.com/JulioLeonardo/javascript-react-github-org-finder
+
+# Access the project's folder
+$ cd javascript-react-github-org-finder
+
+# Open it on vsCode
+$ code .
+
+# Use the terminal to install the deps
+$ yarn
+
+# Execute it on dev mode - If you get stuck on loading, comment out React.StrictMode, check last commit for more info. 
+$ yarn start
+
+# App will run on port :3000 - access <http://localhost:3000>
+```
+
+<h2 id="tech">
+	Tech
+</h2>
+
+Following tech was used on building this app:
+
+- [Typesctipt](https://www.typescriptlang.org/)
+- [React](https://pt-br.reactjs.org/)
+- [Zustand](https://zustand-demo.pmnd.rs/)
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [Apollo GraphQL](https://www.apollographql.com/docs/react/)
+- [MaterialUI](https://mui.com/material-ui/getting-started/overview/)
+- [react-intersection-observer](https://www.npmjs.com/package/react-intersection-observer)
+
+<h2 id="scripts">
+	Scripts
+</h2>
 
 In the project directory, you can run:
 
@@ -44,3 +111,24 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+<h2 id="author">
+	Author
+</h2>
+
+<a href="https://github.com/JulioLeonardo">
+ <img style="border-radius: 50%;" src="https://i.imgur.com/5HQ9tWb.png?1" width="100px;" alt=""/>
+ <br />
+ <sub><b>Julio Leonardo</b></sub></a> <a href="https://github.com/JulioLeonardo" title="Julio">🚀</a>
+
+
+Built with ❤️ by Julio Leonardo 👋🏽 
+
+[![Linkedin Badge](https://img.shields.io/badge/-Julio-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/JulioLeonardoCarvalho/)](https://www.linkedin.com/in/JulioLeonardoCarvalho/) 
+[![Gmail Badge](https://img.shields.io/badge/-juleolica@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:juleolica@gmail.com)](mailto:juleolica@gmail.com)
+
+<h2 id="licence">
+	Licence
+</h2>
+
+<img src="https://img.shields.io/badge/license-MIT-green" alt="lcense"/>
