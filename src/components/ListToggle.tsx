@@ -11,8 +11,10 @@ const ListToggle = (): JSX.Element => {
 
   const handleAppView = (
     event: React.MouseEvent<HTMLElement>,
-    newView: string
+    newView: string | null
   ): void => {
+    if (newView === null) return;
+
     setAppView(newView as AppView);
   };
 
@@ -24,12 +26,28 @@ const ListToggle = (): JSX.Element => {
       aria-label="text alignment"
     >
       <ArrowTooltip title="List view">
-        <ToggleButton value="list" aria-label="left aligned">
+        <ToggleButton
+          value="list"
+          aria-label="left aligned"
+          sx={{
+            ...(appView === "list" && {
+              backgroundColor: (theme) => theme.palette.secondary.dark,
+            }),
+          }}
+        >
           <ListIcon />
         </ToggleButton>
       </ArrowTooltip>
       <ArrowTooltip title="Gallery view">
-        <ToggleButton value="gallery" aria-label="centered">
+        <ToggleButton
+          value="gallery"
+          aria-label="centered"
+          sx={{
+            ...(appView === "gallery" && {
+              backgroundColor: (theme) => theme.palette.secondary.dark,
+            }),
+          }}
+        >
           <CollectionsIcon />
         </ToggleButton>
       </ArrowTooltip>

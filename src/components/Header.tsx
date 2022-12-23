@@ -12,6 +12,7 @@ const Header = (): JSX.Element => {
           alignItems: "center",
           justifyContent: "space-between",
           flexWrap: "wrap",
+          gap: (theme) => theme.spacing(1),
         }}
       >
         <StyledLogo src={Logo} alt="Cruisers logo" />
