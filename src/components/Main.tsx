@@ -4,9 +4,10 @@ import { useQuery } from "@apollo/client";
 import { getShips } from "../queries/getShips";
 import { ImageModal, ListItem, LoaderPage } from "./";
 import { ShipsApiResponse } from "../types";
+import { Gallery } from "./Gallery";
 
 const Main = (): JSX.Element => {
-  const { setShips, findShipFilter, appView } = useShipsStore();
+  const { ships, setShips, findShipFilter, appView } = useShipsStore();
   const shipsFilter: string =
     findShipFilter !== "" ? `, find: { type: "${findShipFilter}"}` : "";
 
@@ -22,14 +23,12 @@ const Main = (): JSX.Element => {
     <LoaderPage />
   ) : (
     <main>
-      {data?.ships.map((ship) => {
-        return appView === "list" ? (
-          <ListItem key={ship.id} ship={ship} />
-        ) : (
-          <></>
-        );
-      })}
-      <ImageModal />
+      <>
+        {appView === "list" &&
+          ships.map((ship) => <ListItem key={ship.id} ship={ship} />)}
+        {appView === "gallery" && <Gallery ships={ships} />}
+        <ImageModal />
+      </>
     </main>
   );
 };

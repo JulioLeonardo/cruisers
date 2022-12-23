@@ -29,6 +29,7 @@ const StyledHeader = styled("header")(({ theme }) => ({
   top: 0,
   backgroundColor: theme.palette.background.paper,
   paddingBottom: theme.spacing(2),
+  zIndex: 2,
 }));
 
 const StyledLogo = styled("img")(({ theme: { spacing } }) => ({

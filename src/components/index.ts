@@ -2,6 +2,7 @@ export * from "./Header";
 export * from "./Home";
 export * from "./ImageModal";
 export * from "./InfoChip";
+export * from "./GalleryItem";
 export * from "./ListItem";
 export * from "./ListToggle";
 export * from "./LoaderPage";
