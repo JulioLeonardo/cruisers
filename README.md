@@ -5,6 +5,7 @@
  <a href="#running">Running the project</a> • 
  <a href="#tech">Tech</a> • 
  <a href="#scripts">Scripts</a> • 
+ <a href="#disclaimer">Disclaimer</a> • 
  <a href="#author">Author</a> • 
  <a href="#licence">Licence</a>
 </h2>
@@ -46,11 +47,23 @@ $ code .
 # Use the terminal to install the deps
 $ yarn
 
-# Execute it on dev mode - If you get stuck on loading, comment out React.StrictMode, check last commit for more info. 
+# Execute it on dev mode 
+ 
 $ yarn start
 
 # App will run on port :3000 - access <http://localhost:3000>
 ```
+<h2 id="disclaimer">
+	Disclaimer
+</h2>
+
+**If you get stuck on loading, uncommenting React strict mode will fix it. 
+When developing, there is a issue that sometimes locks Apollo GraphQLs useQuery loading into true, 
+when using strict mode.**
+
+More info can be found here:
+[`apollographql/apollo-client#9602`](https://github.com/apollographql/apollo-client/issues/9602/)
+[`reactjs/reactjs.org#4534 (comment)`](https://github.com/reactjs/reactjs.org/issues/4534#issuecomment-1085358976/)
 
 <h2 id="tech">
 	Tech
@@ -119,7 +132,8 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 <a href="https://github.com/JulioLeonardo">
  <img style="border-radius: 50%;" src="https://i.imgur.com/5HQ9tWb.png?1" width="100px;" alt=""/>
  <br />
- <sub><b>Julio Leonardo</b></sub></a> <a href="https://github.com/JulioLeonardo" title="Julio">🚀</a>
+ <sub><b>Julio Leonardo</b></sub></a> <a href="https://github.com/JulioLeonardo" title="Julio">🚀
+</a>
 
 
 Built with ❤️ by Julio Leonardo 👋🏽 
