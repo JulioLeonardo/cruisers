@@ -1,4 +1,4 @@
-import {DocumentNode, gql} from "@apollo/client";
+import { DocumentNode, gql } from "@apollo/client";
 
 const getShips = (shipsFilter: string): DocumentNode => gql`
     query {

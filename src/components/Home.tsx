@@ -1,15 +1,16 @@
 import React from "react";
-import { useQuery } from "@apollo/client";
-import { useShipsStore } from "../store";
-import {getShips} from "../queries/getShips";
+import { Header } from "./Header";
+import { Main } from "./Main";
+import { Divider } from "@mui/material";
 
 const Home = (): JSX.Element => {
-  const shipsFilterValue = useShipsStore((state) => state.findShipFilter);
-  const shipsFilter: string = (shipsFilterValue !== "") ? `, find: { type: "${shipsFilterValue}"}` : '';
-
-  const { loading, data } = useQuery(getShips(shipsFilter));
-
-  return loading ? <>loading...</> : <>{JSON.stringify(data)}</>;
+  return (
+    <>
+      <Header />
+      <Divider sx={{ margin: (theme) => `${theme.spacing(3)} 0px` }} />
+      <Main />
+    </>
+  );
 };
 
 export { Home };

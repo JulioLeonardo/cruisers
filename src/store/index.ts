@@ -1,25 +1,37 @@
 import create from "zustand";
-import {Ship, ShipsStore, ShipTypes} from "../types";
+import { ShipsStore } from "../types";
 
 const useShipsStore = create<ShipsStore>((set) => ({
   ships: [],
-  setShips: (ships: Ship[]) => {
-    set(state => ({
+  setShips: (ships) => {
+    set((state) => ({
       ...state,
-      ships: [
-          ...state.ships,
-          ...ships
-      ]
-
-    }))
+      ships: [...state.ships, ...ships],
+    }));
   },
   findShipFilter: "",
-  setFindShipFilter: (filter: ShipTypes) => {
-    set(state =>({
+  setFindShipFilter: (filter) => {
+    set((state) => ({
       ...state,
       findShipFilter: filter,
-    }))
-  }
+    }));
+  },
+  appView: "list",
+  setAppView: (view) => {
+    set((state) => ({
+      ...state,
+      appView: view,
+    }));
+  },
+  isImageModalOpen: false,
+  selectedShip: "",
+  toggleImageModal: (id) => {
+    set((state) => ({
+      ...state,
+      isImageModalOpen: !state.isImageModalOpen,
+      selectedShip: id,
+    }));
+  },
 }));
 
 export { useShipsStore };
