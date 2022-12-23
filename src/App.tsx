@@ -8,9 +8,24 @@ import {
   ThemeProvider,
 } from "@mui/material";
 
+const cache = new InMemoryCache({
+  typePolicies: {
+    Query: {
+      fields: {
+        ships: {
+          keyArgs: false,
+          merge(existing = [], incoming) {
+            return [...existing, ...incoming];
+          },
+        },
+      },
+    },
+  },
+});
+
 const client = new ApolloClient({
   uri: "http://coding-challenge-a8s934ksd.eu-central-1.elasticbeanstalk.com/graphql",
-  cache: new InMemoryCache(),
+  cache,
 });
 
 const theme = createTheme({

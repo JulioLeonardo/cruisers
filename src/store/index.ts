@@ -6,7 +6,7 @@ const useShipsStore = create<ShipsStore>((set) => ({
   setShips: (ships) => {
     set((state) => ({
       ...state,
-      ships: [...state.ships, ...ships],
+      ships: [...ships],
     }));
   },
   findShipFilter: "",
