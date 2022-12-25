@@ -18,8 +18,6 @@ const Main = (): JSX.Element => {
     { variables: { offset: 0, limit: 7 } }
   );
 
-  console.log({ loading }, { data }, { ships });
-
   useEffect(() => {
     if (data?.ships == null) return;
 
