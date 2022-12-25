@@ -1,4 +1,4 @@
-<h1 align="center">Cruisers - Your home at sea</h2>
+<h1 align="center">Cruisers - Your home at sea</h1>
 
 <h2 align="center">
  <a href="#requisites">Prerequisites</a> • 
@@ -14,7 +14,7 @@
 
 - [x] Ships List
 - [x] Alternative gallery view
-- [x] Switch betweeen list and gallery view at any given time
+- [x] Switch between list and gallery view at any given time
 - [x] Infinite scroll
 - [x] Ships filter by type
 - [x] Page is interactive
@@ -36,10 +36,10 @@ Besides that, it is always good to have a nice IDE such as <a href="https://code
 
 ```bash
 # Clone the repo
-$ git clone https://github.com/JulioLeonardo/javascript-react-github-org-finder
+$ git clone https://github.com/JulioLeonardo/cruisers
 
 # Access the project's folder
-$ cd javascript-react-github-org-finder
+$ cd cruisers
 
 # Open it on vsCode
 $ code .
@@ -145,4 +145,4 @@ Built with ❤️ by Julio Leonardo 👋🏽
 	Licence
 </h2>
 
-<img src="https://img.shields.io/badge/license-MIT-green" alt="lcense"/>
+<img src="https://img.shields.io/badge/license-MIT-green" alt="license"/>

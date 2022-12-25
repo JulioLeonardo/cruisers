@@ -6,13 +6,14 @@ import { ImageModal, ListItem, LoaderPage } from "./";
 import { ShipsApiResponse } from "../types";
 import { Gallery } from "./Gallery";
 import { InView } from "react-intersection-observer";
+import { Alert, Snackbar } from "@mui/material";
 
 const Main = (): JSX.Element => {
   const { ships, setShips, findShipFilter, appView } = useShipsStore();
   const shipsFilter: string =
     findShipFilter !== "" ? `, find: { type: "${findShipFilter}"}` : "";
 
-  const { loading, data, fetchMore } = useQuery<ShipsApiResponse>(
+  const { loading, error, data, fetchMore } = useQuery<ShipsApiResponse>(
     getShips(shipsFilter),
     { variables: { offset: 0, limit: 7 } }
   );
@@ -24,6 +25,14 @@ const Main = (): JSX.Element => {
 
     setShips(data.ships);
   }, [loading, data]);
+
+  if (error !== undefined) {
+    return (
+      <Snackbar open>
+        <Alert severity="error">{error.message}</Alert>
+      </Snackbar>
+    );
+  }
 
   return loading ? (
     <LoaderPage />
