@@ -1,0 +1,216 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-qxzq5-MuiPaper-root-MuiCard-root"
+>
+  <h5
+    className="MuiTypography-root MuiTypography-h5 css-144bb4j-MuiTypography-root"
+  >
+    GO Ms Tree
+  </h5>
+  <div
+    className="MuiBox-root css-1dqpc7h"
+  >
+    <div
+      aria-label="Status"
+      aria-labelledby={null}
+      className="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-1ytpwe4-MuiChip-root"
+      data-mui-internal-clone-element={true}
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
+    >
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root MuiSvgIcon-colorSuccess MuiSvgIcon-fontSizeMedium MuiChip-icon MuiChip-iconMedium MuiChip-iconColorSuccess css-1hsi6dz-MuiSvgIcon-root"
+        data-testid="CircleIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
+        />
+      </svg>
+      <span
+        className="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+      >
+        Active
+      </span>
+    </div>
+    <div
+      aria-label="Type"
+      aria-labelledby={null}
+      className="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-1ytpwe4-MuiChip-root"
+      data-mui-internal-clone-element={true}
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
+    >
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root MuiSvgIcon-colorSecondary MuiSvgIcon-fontSizeMedium MuiChip-icon MuiChip-iconMedium MuiChip-iconColorSecondary css-ql42lq-MuiSvgIcon-root"
+        data-testid="TitleOutlinedIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M5 4v3h5.5v12h3V7H19V4H5z"
+        />
+      </svg>
+      <span
+        className="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+      >
+        High Speed Craft
+      </span>
+    </div>
+    <div
+      aria-label="Home port"
+      aria-labelledby={null}
+      className="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-1ytpwe4-MuiChip-root"
+      data-mui-internal-clone-element={true}
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
+    >
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root MuiSvgIcon-colorInfo MuiSvgIcon-fontSizeMedium MuiChip-icon MuiChip-iconMedium MuiChip-iconColorInfo css-hjc7um-MuiSvgIcon-root"
+        data-testid="FlagIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M14.4 6 14 4H5v17h2v-7h5.6l.4 2h7V6z"
+        />
+      </svg>
+      <span
+        className="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+      >
+        Port Canaveral
+      </span>
+    </div>
+    <div
+      aria-label="Year built"
+      aria-labelledby={null}
+      className="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-1ytpwe4-MuiChip-root"
+      data-mui-internal-clone-element={true}
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
+    >
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root MuiSvgIcon-colorAction MuiSvgIcon-fontSizeMedium MuiChip-icon MuiChip-iconMedium MuiChip-iconColorAction css-1950t6l-MuiSvgIcon-root"
+        data-testid="FoundationIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 12h3L12 3 2 12h3v3H3v2h2v3h2v-3h4v3h2v-3h4v3h2v-3h2v-2h-2v-3zM7 15v-4.81l4-3.6V15H7zm6 0V6.59l4 3.6V15h-4z"
+        />
+      </svg>
+      <span
+        className="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+      >
+        2015
+      </span>
+    </div>
+    <div
+      className="MuiBox-root css-13o7eu2"
+      onClick={[Function]}
+    >
+      <div
+        aria-label="Image"
+        aria-labelledby={null}
+        className="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-1ytpwe4-MuiChip-root"
+        data-mui-internal-clone-element={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onTouchEnd={[Function]}
+        onTouchStart={[Function]}
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium MuiChip-icon MuiChip-iconMedium MuiChip-iconColorPrimary css-1bs1du6-MuiSvgIcon-root"
+          data-testid="ImageIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"
+          />
+        </svg>
+        <span
+          className="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+        >
+          Photo
+        </span>
+      </div>
+    </div>
+    <a
+      className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root"
+      href="https://www.marinetraffic.com/en/ais/details/ships/shipid:3439091/vessel:MR%20STEVEN"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      target="_blank"
+    >
+      <div
+        aria-label="Link - Marine Traffic"
+        aria-labelledby={null}
+        className="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-1ytpwe4-MuiChip-root"
+        data-mui-internal-clone-element={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onTouchEnd={[Function]}
+        onTouchStart={[Function]}
+      >
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSvgIcon-colorAction MuiSvgIcon-fontSizeMedium MuiChip-icon MuiChip-iconMedium MuiChip-iconColorAction css-1950t6l-MuiSvgIcon-root"
+          data-testid="MouseIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13 1.07V9h7c0-4.08-3.05-7.44-7-7.93zM4 15c0 4.42 3.58 8 8 8s8-3.58 8-8v-4H4v4zm7-13.93C7.05 1.56 4 4.92 4 9h7V1.07z"
+          />
+        </svg>
+        <span
+          className="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
+        >
+          Marine Traffic - Ship page
+        </span>
+      </div>
+    </a>
+  </div>
+</div>
+`;
