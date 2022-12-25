@@ -30,6 +30,7 @@ const ListItem = ({ ship }: { ship: Ship }): JSX.Element => {
             />
           }
           label={ship.active ? "Active" : "Inactive"}
+          shouldNotRenderInfoShip={ship.active === null}
         />
         <InfoChip
           title="Type"
@@ -40,6 +41,7 @@ const ListItem = ({ ship }: { ship: Ship }): JSX.Element => {
             />
           }
           label={ship.type}
+          shouldNotRenderInfoShip={ship.type === null}
         />
         <InfoChip
           title="Home port"
@@ -47,6 +49,7 @@ const ListItem = ({ ship }: { ship: Ship }): JSX.Element => {
             <Flag color="info" sx={{ width: (theme) => theme.spacing(2.5) }} />
           }
           label={ship.home_port}
+          shouldNotRenderInfoShip={ship.home_port === null}
         />
         <InfoChip
           title="Year built"
@@ -57,8 +60,12 @@ const ListItem = ({ ship }: { ship: Ship }): JSX.Element => {
             />
           }
           label={String(ship.year_built)}
+          shouldNotRenderInfoShip={ship.year_built === null}
         />
-        <Box onClick={() => toggleImageModal(String(ship.id))}>
+        <Box
+          onClick={() => toggleImageModal(String(ship.id))}
+          display={ship.image === null ? "none" : "block"}
+        >
           <InfoChip
             title="Image"
             icon={
@@ -68,6 +75,7 @@ const ListItem = ({ ship }: { ship: Ship }): JSX.Element => {
               />
             }
             label="Photo"
+            shouldNotRenderInfoShip={ship.image === null}
           />
         </Box>
         <Link target="_blank" href={ship.url}>
@@ -80,6 +88,7 @@ const ListItem = ({ ship }: { ship: Ship }): JSX.Element => {
               />
             }
             label="Marine Traffic - Ship page"
+            shouldNotRenderInfoShip={ship.url === null}
           />
         </Link>
       </Box>

@@ -2,6 +2,7 @@ type ShipTypes = "High Speed Craft" | "Cargo" | "Tug" | "Barge" | "";
 type AppView = "list" | "gallery";
 
 interface Ship {
+  __typename: string;
   id: string;
   active: boolean;
   home_port: string;
@@ -13,7 +14,7 @@ interface Ship {
 }
 
 interface ShipsApiResponse {
-  ships: Array<{ _typename: string } & Ship>;
+  ships: Ship[];
 }
 
 interface ShipsStore {
