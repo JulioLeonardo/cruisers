@@ -1,22 +1,25 @@
-import React, { useEffect } from "react";
-import { useShipsStore } from "../store";
-import { useQuery } from "@apollo/client";
-import { getShips } from "../queries/getShips";
+import { Alert, Snackbar } from "@mui/material";
 import { ImageModal, ListItem, LoaderPage } from "./";
-import { ShipsApiResponse } from "../types";
+import React, { useEffect } from "react";
+
 import { Gallery } from "./Gallery";
 import { InView } from "react-intersection-observer";
-import { Alert, Snackbar } from "@mui/material";
+import { ShipsApiResponse } from "../types";
+import { getShips } from "../queries/getShips";
+import { useQuery } from "@apollo/client";
+import { useShipsStore } from "../store";
 
 const Main = (): JSX.Element => {
   const { ships, setShips, findShipFilter, appView } = useShipsStore();
-  const shipsFilter: string =
-    findShipFilter !== "" ? `, find: { type: "${findShipFilter}"}` : "";
 
-  const { loading, error, data, fetchMore } = useQuery<ShipsApiResponse>(
-    getShips(shipsFilter),
-    { variables: { offset: 0, limit: 7 } }
-  );
+  const { loading, error, data, fetchMore, refetch } =
+    useQuery<ShipsApiResponse>(getShips, {
+      variables: { offset: 0, limit: 7, type: findShipFilter },
+    });
+
+  useEffect(() => {
+    void refetch();
+  }, [findShipFilter]);
 
   useEffect(() => {
     if (data?.ships == null) return;
